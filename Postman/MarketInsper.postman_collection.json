@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "aa4fc51e-bdb8-4b77-ad23-1239a5922e10",
+		"name": "MarketInsper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31369985"
+	},
+	"item": [
+		{
+			"name": "cadastra-candidato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"nome\": \"Lucas Ikawa\",\n\"email_insper\": \"lucasbqi@al.insper.edu.br\",\n\"curso\": \"Ciência da computação\",\n\"semestre\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/candidatos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"candidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleta-candidato",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "/candidato/delete/2",
+					"path": [
+						"candidato",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastra-projetos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/projetos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"projetos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "altera-projetos",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
